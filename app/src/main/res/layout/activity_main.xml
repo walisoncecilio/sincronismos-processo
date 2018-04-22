@@ -32,4 +32,135 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/bt_novo_cliente"
         app:layout_constraintTop_toTopOf="@+id/bt_novo_cliente"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tv_cli_barbeiro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barbeiro_dormindo"/>
+
+    <TextView
+        android:id="@+id/tv_cli_barbeiro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="DORMINDO"
+        app:layout_constraintBottom_toTopOf="@+id/iv_cadeira_3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"/>
+
+    <ImageView
+        android:id="@+id/iv_cadeira_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_cadeira_2"
+        app:layout_constraintTop_toTopOf="@+id/iv_cadeira_3"
+        app:srcCompat="@drawable/cliente_aguardando"
+        tools:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/iv_cadeira_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/iv_cadeira_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_cadeira_5"
+        app:layout_constraintTop_toTopOf="@+id/iv_cadeira_3"
+        app:srcCompat="@drawable/cliente_aguardando"
+        tools:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/iv_cadeira_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/iv_cadeira_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_cadeira_3"
+        app:srcCompat="@drawable/cliente_aguardando"
+        tools:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/iv_cadeira_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/iv_cadeira_1"
+        app:layout_constraintStart_toEndOf="@+id/iv_cadeira_3"
+        app:layout_constraintTop_toTopOf="@+id/iv_cadeira_3"
+        app:srcCompat="@drawable/cliente_aguardando"
+        tools:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/iv_cadeira_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tv_cli_3"
+        app:layout_constraintEnd_toStartOf="@+id/iv_cadeira_2"
+        app:layout_constraintStart_toEndOf="@+id/iv_cadeira_4"
+        app:srcCompat="@drawable/cliente_aguardando"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/tv_cli_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/iv_cadeira_1"
+        app:layout_constraintStart_toStartOf="@+id/iv_cadeira_1"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cadeira_1"
+        tools:text="TEXTO"/>
+
+    <TextView
+        android:id="@+id/tv_cli_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/iv_cadeira_2"
+        app:layout_constraintStart_toStartOf="@+id/iv_cadeira_2"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cadeira_2"
+        tools:text="TEXTO"/>
+
+    <TextView
+        android:id="@+id/tv_cli_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_finalizar_corte"
+        app:layout_constraintEnd_toStartOf="@+id/iv_cadeira_2"
+        app:layout_constraintStart_toEndOf="@+id/iv_cadeira_4"
+        tools:text="TEXTO"/>
+
+    <TextView
+        android:id="@+id/tv_cli_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/iv_cadeira_4"
+        app:layout_constraintStart_toStartOf="@+id/iv_cadeira_4"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cadeira_4"
+        tools:text="TEXTO"/>
+
+    <TextView
+        android:id="@+id/tv_cli_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/iv_cadeira_4"
+        app:layout_constraintStart_toStartOf="@+id/iv_cadeira_5"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cadeira_5"
+        tools:text="TEXTO"/>
+
+
 </android.support.constraint.ConstraintLayout>

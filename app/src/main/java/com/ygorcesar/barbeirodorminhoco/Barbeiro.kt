@@ -47,6 +47,7 @@ class Barbeiro(val cadeiras: Int) {
                 isCortando = true
                 clienteCortando = clienteAguardando
                 clientesAguardando.removeAt(0)
+                Log.i("BARBEIRO", "Cliente ${clienteCortando?.nome} iniciou o corte")
             } else {
                 Log.i("BARBEIRO", "Não tem mais nenhum cliente para cortar cabelo barbeiro voltou a dormir")
                 clienteCortando = null
